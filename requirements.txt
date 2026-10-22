@@ -1,0 +1,6 @@
+flask
+requests
+chromadb
+playwright
+ddgs
+openpyxl

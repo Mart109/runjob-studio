@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunJob — Ваш ИИ-помощник</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23c0392b'/%3E%3Ctext x='50' y='68' font-size='55' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3ER%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .nav-links {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+        .nav-links a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 6px 12px;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        .nav-links a:hover {
+            background: rgba(231, 76, 60, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">RunJob</div>
+            <div class="nav-links">
+                <a href="/">Чат</a>
+                <a href="/planner">Планировщик</a>
+                <div class="level" id="levelDisplay">Версия 2.0</div>
+            </div>
+        </div>
+        <div class="chat-box" id="chatBox">
+            <div class="message bot">
+                <div class="msg-content">Доброе пожаловать. Я RunJob. Чем могу помочь?</div>
+            </div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Введите задачу..." autofocus>
+            <button onclick="sendMessage()">Отправить</button>
+        </div>
+    </div>
+    <script src="/static/chat.js"></script>
+</body>
+</html>
